@@ -1,0 +1,25 @@
+[project]
+name = "datasette-python"
+version = "0.1"
+description = "Run a Python interpreter in the Datasette virtual environment"
+readme = "README.md"
+authors = [{name = "Simon Willison"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "datasette"
+]
+
+[project.urls]
+Homepage = "https://github.com/datasette/datasette-python"
+Changelog = "https://github.com/datasette/datasette-python/releases"
+Issues = "https://github.com/datasette/datasette-python/issues"
+CI = "https://github.com/datasette/datasette-python/actions"
+
+[project.entry-points.datasette]
+python = "datasette_python"
+
+[project.optional-dependencies]
+test = ["pytest"]
